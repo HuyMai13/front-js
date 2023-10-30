@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#proj">Projects</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="burger-nav">
+        <div class="logo">Portfolio</div>
+        <div class="burger-menu">
+            <div class="burger-icon" onclick="toggMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggMenu()">About</a></li>
+                <li><a href="#proj" onclick="toggMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <img id="profile-pic" src="./assets/profile-pic.png"
+        alt="My profile pic">
+        <div class="section_text">
+            <p class="title">I'm Huy Mai</p>
+            <h1 class="title">Full Stack Developer</h1>
+            <div class="btn-container">
+                <button class="profilebtn color-1" 
+                onclick="window.open('./assets/profile-pic.png')">Resume</button>
+                <button class="profilebtn color-2"
+                onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/GitHub_White.png" alt="Github" class="icon"
+                onclick="location.href='https://github.com/HuyMai13'"/>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="header">About Me</h2>
+        <div class="section-container">
+            <img id="img-about-me" src="./assets/profile-pic.png" alt="About Me pic"/>
+            <div class="about-container">
+                <div class="detail-container">
+                    <div class="detail">
+                        <img class="icon" src="./assets/exp-icon.png" alt="Exp icon"/>
+                        <h3>Experience</h3>
+                        <p>3+ months<br/>Full Stack Development and Design<br/></p>
+                    </div>
+                    <div class="detail">
+                        <img class="icon" src="./assets/edu-icon.png" alt="Edu icon"/>
+                        <h3>Education</h3>
+                        <p>University of Texas at San Antonio
+                        <br/>Computer Science B.S. Degree</p>
+                    </div>
+                </div>
+                <div id="about-btn">
+                    <button class="profilebtn color-1" 
+                    onclick="window.open('./assets/profile-pic.png')">Resume</button>
+                    <button class="profilebtn color-2"
+                    onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proj">
+        <h2 class="header">Projects</h2>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
