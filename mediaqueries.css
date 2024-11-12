@@ -1,9 +1,14 @@
-@media screen and (max-width: 1280px) {
-    #desktop-nav{
+@media screen and (max-width: 850px) {
+    #desktop-nav {
         display: none;
     }
-
-    #burger-nav{
+    #burger-nav {
         display: flex;
+    }
+    .detail-container {
+        display: block;
+    }
+    #proj-wrapper {
+        display: block;
     }
 }

@@ -4,3 +4,6 @@ function toggMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
 }
+function copyToClipBoard(txt) {
+    navigator.clipboard.writeText(txt);
+}

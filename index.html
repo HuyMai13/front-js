@@ -1,89 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Portfolio</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#proj">Projects</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Huy Mai portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+    </head>
+    <body>
+        <!-- For mediaqueries.css -->
+        <nav id="desktop-nav">
+            <div class="logo">Portfolio</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#proj">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-    <nav id="burger-nav">
-        <div class="logo">Portfolio</div>
-        <div class="burger-menu">
-            <div class="burger-icon" onclick="toggMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggMenu()">About</a></li>
-                <li><a href="#proj" onclick="toggMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-
-    <section id="profile">
-        <img id="profile-pic" src="./assets/profile-pic.png"
-        alt="My profile pic">
-        <div class="section_text">
-            <p class="title">I'm Huy Mai</p>
-            <h1 class="title">Full Stack Developer</h1>
-            <div class="btn-container">
-                <button class="profilebtn color-1" 
-                onclick="window.open('./assets/profile-pic.png')">Resume</button>
-                <button class="profilebtn color-2"
-                onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="social-container">
-                <img src="./assets/GitHub_White.png" alt="Github" class="icon"
-                onclick="location.href='https://github.com/HuyMai13'"/>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2 class="header">About Me</h2>
-        <div class="section-container">
-            <img id="img-about-me" src="./assets/profile-pic.png" alt="About Me pic"/>
-            <div class="about-container">
-                <div class="detail-container">
-                    <div class="detail">
-                        <img class="icon" src="./assets/exp-icon.png" alt="Exp icon"/>
-                        <h3>Experience</h3>
-                        <p>3+ months<br/>Full Stack Development and Design<br/></p>
-                    </div>
-                    <div class="detail">
-                        <img class="icon" src="./assets/edu-icon.png" alt="Edu icon"/>
-                        <h3>Education</h3>
-                        <p>University of Texas at San Antonio
-                        <br/>Computer Science B.S. Degree</p>
-                    </div>
+        <nav id="burger-nav">
+            <div class="logo">Portfolio</div>
+            <div class="burger-menu">
+                <div class="burger-icon" onclick="toggMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div id="about-btn">
-                    <button class="profilebtn color-1" 
-                    onclick="window.open('./assets/profile-pic.png')">Resume</button>
-                    <button class="profilebtn color-2"
-                    onclick="location.href='./#contact'">Contact Info</button>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggMenu()">About</a></li>
+                    <li><a href="#proj" onclick="toggMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggMenu()">Contact</a></li>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="proj">
-        <h2 class="header">Projects</h2>
-    </section>
-    <script src="script.js"></script>
-</body>
+        </nav>
+
+        <!-- PROFILE -->
+        <section id="profile">
+            <img
+                id="profile-pic"
+                src="./assets/profile-pic.jpg"
+                alt="My profile pic"
+            />
+            <div class="section-text">
+                <p class="title">Huy Mai</p>
+                <h1 class="title">Web Developer</h1>
+                <button
+                    class="profilebtn color-1"
+                    onclick="location.href='./#about'"
+                >
+                    About Me
+                </button>
+                <button
+                    class="profilebtn color-2"
+                    onclick="location.href='./#contact'"
+                >
+                    Contact Info
+                </button>
+                <div id="social-container">
+                    <img
+                        src="./assets/GitHub_White.png"
+                        alt="Github"
+                        class="icon"
+                        onclick="location.href='https://github.com/HuyMai13'"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2 class="header">About</h2>
+            <div class="section-container">
+                <img
+                    id="img-about-me"
+                    src="./assets/profile-pic.jpg"
+                    alt="About Me pic"
+                />
+                <div class="about-container">
+                    <div class="detail-container">
+                        <div class="detail">
+                            <img
+                                class="icon"
+                                src="./assets/exp-icon.png"
+                                alt="Exp icon"
+                            />
+                            <h3>Experience</h3>
+                            <p>
+                                3+ months<br />Web Development and Design<br />
+                            </p>
+                        </div>
+                        <div class="detail">
+                            <img
+                                class="icon"
+                                src="./assets/edu-icon.png"
+                                alt="Edu icon"
+                            />
+                            <h3>Education</h3>
+                            <p>
+                                University of Texas at San Antonio
+                                <br />Computer Science B.S. Degree
+                            </p>
+                        </div>
+                    </div>
+                    <div id="about-btn">
+                        <button
+                            class="profilebtn color-1"
+                            onclick="window.open('./assets/resume.pdf')"
+                        >
+                            Resume
+                        </button>
+                        <button
+                            class="profilebtn color-2"
+                            onclick="location.href='./#contact'"
+                        >
+                            Contact Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJ -->
+        <section id="proj">
+            <h2 class="header">Project</h2>
+            <div id="proj-wrapper">
+                <div class="proj-container">
+                    <div class="title">Pathfinding Visualizer</div>
+                    <img
+                        class="proj-img"
+                        src="./assets/pathfinder.png"
+                        alt="Pathfinder"
+                    />
+                    <p>
+                        Responsive demo of pathfinding algorithm built with JS,
+                        HTML and CSS
+                    </p>
+                    <img
+                        src="./assets/GitHub_White.png"
+                        alt="Github"
+                        class="proj-icon"
+                        onclick="location.href='https://github.com/HuyMai13/pathfinder-js'"
+                    />
+                </div>
+                <div class="proj-container">
+                    <div class="title">Web Portfolio</div>
+                    <img
+                        class="proj-img"
+                        src="./assets/web-portfolio.png"
+                        alt="Pathfinder"
+                    />
+                    <p>
+                        My web portfolio written from scratch using HTML and CSS
+                    </p>
+                    <img
+                        src="./assets/GitHub_White.png"
+                        alt="Github"
+                        class="proj-icon"
+                        onclick="location.href='https://github.com/HuyMai13/front-js'"
+                    />
+                </div>
+                <div class="proj-container">
+                    <div class="title">To Do App</div>
+                    <img
+                        class="proj-img"
+                        src="./assets/todo-app.png"
+                        alt="Pathfinder"
+                    />
+                    <p>Basic To Do Web App built using React library</p>
+                    <img
+                        src="./assets/GitHub_White.png"
+                        alt="Github"
+                        class="proj-icon"
+                        onclick="location.href='https://github.com/HuyMai13/todo-react'"
+                    />
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2 class="header">Contact</h2>
+            <div class="title">Email</div>
+            <div class="contact-wrapper">
+                <p>qhuym1012@gmail.com</p>
+                <button onclick="copyToClipBoard('qhuym1012@gmail.com')">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2rem"
+                        height="2rem"
+                        viewBox="0 0 24 24"
+                    >
+                        <g
+                            fill="none"
+                            stroke="black"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                        >
+                            <path
+                                d="M18.327 7.286h-8.044a1.93 1.93 0 0 0-1.925 1.938v10.088c0 1.07.862 1.938 1.925 1.938h8.044a1.93 1.93 0 0 0 1.925-1.938V9.224c0-1.07-.862-1.938-1.925-1.938"
+                            />
+                            <path
+                                d="M15.642 7.286V4.688c0-.514-.203-1.007-.564-1.37a1.92 1.92 0 0 0-1.361-.568H5.673c-.51 0-1 .204-1.36.568a1.95 1.95 0 0 0-.565 1.37v10.088c0 .514.203 1.007.564 1.37s.85.568 1.361.568h2.685"
+                            />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="title">Github</div>
+            <div class="contact-wrapper">
+                <p>https://github.com/HuyMai13/</p>
+                <button
+                    onclick="copyToClipBoard('https://github.com/HuyMai13/')"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2rem"
+                        height="2rem"
+                        viewBox="0 0 24 24"
+                        onclick="copyToClipBoard(https://github.com/HuyMai13/)"
+                    >
+                        <g
+                            fill="none"
+                            stroke="black"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                        >
+                            <path
+                                d="M18.327 7.286h-8.044a1.93 1.93 0 0 0-1.925 1.938v10.088c0 1.07.862 1.938 1.925 1.938h8.044a1.93 1.93 0 0 0 1.925-1.938V9.224c0-1.07-.862-1.938-1.925-1.938"
+                            />
+                            <path
+                                d="M15.642 7.286V4.688c0-.514-.203-1.007-.564-1.37a1.92 1.92 0 0 0-1.361-.568H5.673c-.51 0-1 .204-1.36.568a1.95 1.95 0 0 0-.565 1.37v10.088c0 .514.203 1.007.564 1.37s.85.568 1.361.568h2.685"
+                            />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="title">Resume / CV</div>
+            <div class="contact-wrapper">
+                <p>PDF file</p>
+                <button onclick="window.open('./assets/resume.pdf')">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="2rem"
+                        height="2rem"
+                        viewBox="0 0 24 24"
+                        onclick="copyToClipBoard(https://github.com/HuyMai13/)"
+                    >
+                        <g
+                            fill="none"
+                            stroke="black"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                        >
+                            <path
+                                d="M18.327 7.286h-8.044a1.93 1.93 0 0 0-1.925 1.938v10.088c0 1.07.862 1.938 1.925 1.938h8.044a1.93 1.93 0 0 0 1.925-1.938V9.224c0-1.07-.862-1.938-1.925-1.938"
+                            />
+                            <path
+                                d="M15.642 7.286V4.688c0-.514-.203-1.007-.564-1.37a1.92 1.92 0 0 0-1.361-.568H5.673c-.51 0-1 .204-1.36.568a1.95 1.95 0 0 0-.565 1.37v10.088c0 .514.203 1.007.564 1.37s.85.568 1.361.568h2.685"
+                            />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
 </html>
