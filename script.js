@@ -6,4 +6,7 @@ function toggMenu() {
 }
 function copyToClipBoard(txt) {
     navigator.clipboard.writeText(txt);
+    let pu = document.querySelector(".popup");
+    pu.classList.toggle("show");
+    setTimeout(() => pu.classList.toggle("show"), 3000);
 }

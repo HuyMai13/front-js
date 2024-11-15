@@ -260,8 +260,13 @@ section {
 .proj-img {
     display: block;
     max-width: 300px;
-    max-height: 200px;
+    max-height: 250px;
     margin: auto;
+}
+.proj-img:hover {
+    transform: scale(2);
+    border: 1px solid greenyellow;
+    cursor: zoom-in;
 }
 #proj p {
     display: block;
@@ -271,11 +276,31 @@ section {
     max-width: 80%;
     margin: 1.5rem auto;
 }
+.link-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
 .proj-icon {
     cursor: pointer;
     height: 2rem;
     object-fit: contain;
     margin-top: auto;
+}
+.demo {
+    width: 6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: snow;
+    background-color: hsl(200, 100%, 50%);
+    border: none;
+    border-radius: 0.5rem;
+}
+.demo:hover {
+    background-color: hsl(200, 100%, 40%);
+    cursor: pointer;
+}
+.demo:hover::after {
+    content: " >";
 }
 /* --------------- CONTACT -------------- */
 #contact {
@@ -292,9 +317,33 @@ section {
 #contact button {
     cursor: pointer;
     margin-left: 10rem;
-    /* background-color: rgb(40, 40, 40);
-    border: 1px solid hsl(0, 0%, 30%); */
 }
-/* #contact button:hover {
-    border: 2px double hsl(0, 0%, 50%);
-} */
+
+.popup {
+    display: flex;
+    justify-content: center;
+    width: 0;
+}
+.popup p {
+    display: none;
+}
+.show {
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    bottom: 4rem;
+    transition: all 500ms ease;
+}
+.show p {
+    display: block;
+    width: 250px;
+    max-width: 80%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: snow;
+    background-color: hsl(200, 100%, 50%);
+    border-radius: 1rem;
+    z-index: 9;
+}
