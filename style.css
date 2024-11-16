@@ -212,12 +212,15 @@ section {
     max-width: 20vw;
     max-height: 20vw;
     border-radius: 10vh;
+    margin-left: 10vw;
     object-fit: cover;
 }
 .about-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 2;
+    margin-right: 10vw;
 }
 .detail-container {
     display: flex;
@@ -347,7 +350,7 @@ section {
     font-size: 1.1rem;
     font-weight: 600;
     color: snow;
-    background-color: hsl(200, 100%, 50%);
+    background-color: hsl(200, 100%, 40%);
     border-radius: 1rem;
     z-index: 9;
 }
