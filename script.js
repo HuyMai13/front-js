@@ -6,7 +6,11 @@ function toggMenu() {
 }
 function copyToClipBoard(txt) {
     navigator.clipboard.writeText(txt);
-    let pu = document.querySelector(".popup");
+    const pu = document.querySelector(".popup");
     pu.classList.toggle("show");
     setTimeout(() => pu.classList.toggle("show"), 3000);
+}
+function zoomImg(index) {
+    const img = document.querySelectorAll(".proj-img");
+    img[index].classList.toggle("zoom");
 }
